@@ -42,3 +42,4 @@
 + Распределение новых клиентов за май 2019
 + Продажи по сегментам на каждый месяц 2019
 
+![excel dashboard](https://github.com/FtrDtEngnr/DataLearn/blob/main/module1/excel_dashboard.png)
