@@ -11,8 +11,9 @@
 + написать SQL-запросы, чтобы изучить показатели бизнеса
 + нарисовать модели данных для Superstore
 + выполнить DDL в SQL клиенте: создать новые таблицы и заполнить их данными
-+ загрузить данные в разные слои: создать схемы stg и dw и наполнить их данными
-+ создать дашборды в нескольких BI-инструментах
++ создать аккаунт в AWS, создать instance и базу данных в Lightsail, подключиться к базе с локального PostgreSQL
++ загрузить данные в разные слои облачной БД: создать схемы stg и dw и наполнить их данными
++ создать дашборд в одном из нескольких BI-инструментах
   
 ## Установка базы данных, клиента SQL, загрузка данных в БД, написание SQL-запросов
 
@@ -90,9 +91,11 @@ SQL-запросы: [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/ma
 ![QuickSight Interface](https://github.com/FtrDtEngnr/DataLearn/blob/main/module2/process_of_creation_dashboard.png)
 
 Для дашборда по уже знакомой нам базе superstore я выбрал следующие метрики:
-* a
-* a
-* a
+* Динамика выручки и продаж за год(по месяцам)
+* Продажи по под-категориям(отсортированы по убыванию)
+* Доля продаж по каждому сегменту
+* геграфическая карта по колл-ву продаж
+* Доля продаж по каждому сегменту по месяцам
 
 ![Dashboard Quicksight](https://github.com/FtrDtEngnr/DataLearn/blob/main/module2/Dashboard_AWS_Quicksight_page-0001.jpg)
 [Dashboard Quicksight](https://github.com/FtrDtEngnr/DataLearn/blob/main/module2/Dashboard_AWS_Quicksight.pdf)
