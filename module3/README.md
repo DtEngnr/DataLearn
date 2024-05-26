@@ -10,6 +10,6 @@
 ## Дашборд Superstore
 **Инструмент: Tableau Public**
 
-**Мой Superstore Dashboard:** [здесь](https://github.com/Data-Learn/data-engineering/blob/master/DE-101%20Modules/Module02/readme.md)
+**Мой Superstore Dashboard:** [здесь](https://public.tableau.com/app/profile/danat.baidullayev1448/viz/AnalyticsDashboard_17167198295390/HRAnalyticsDashboard?publish=yes)
 
-Образец Tableau Public - Learn - How-To Videos здесь
+
