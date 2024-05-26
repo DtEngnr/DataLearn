@@ -10,6 +10,8 @@
 ## Дашборд Superstore
 **Инструмент: Tableau Public**
 
-**Мой Superstore Dashboard:** [здесь](https://public.tableau.com/app/profile/danat.baidullayev1448/viz/AnalyticsDashboard_17167198295390/HRAnalyticsDashboard?publish=yes)
+**Мой Superstore Dashboard:** 
 
+> Данный дашборд отражает 6 ключевых показателей в датасете Superstore за выбранный год. Примечательно, что линейный график отображает ситуацию за выбранный год, в то время как закрашенная серым площадь отражает ситуацию по тому же ключевому показателю в прошлом году. Также линейный график принимает зеленый цвет, если показатель превысил прошлогодние значения, и красный в противном случае. В дашборде присутствуют фильтры по сегменту, году и категории.
 
+![KPI Dashboard](https://github.com/FtrDtEngnr/DataLearn/blob/main/module3/KPI%20%D0%94%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4.png)
