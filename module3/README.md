@@ -20,6 +20,14 @@
 
 **Data source:** [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module3/HR%20Data.xlsx)
 
-**Дашборд:** [здесь](https://public.tableau.com/app/profile/danat.baidullayev1448/viz/AnalyticsDashboard_17167198295390/HRAnalyticsDashboard#1)
+**Мой HR Analytics Dashboard** [здесь](https://public.tableau.com/app/profile/danat.baidullayev1448/viz/AnalyticsDashboard_17167198295390/HRAnalyticsDashboard#1)
 
 ![Analytics Dashboard](https://github.com/FtrDtEngnr/DataLearn/blob/main/module3/HR%20Analytics%20Dashboard.png)
+
+Мой Дашборд отражает следующие показатели используя различные визуализации(*Lolypop Chart*, *Pie Chart*, *Bar Chart*, *Heat Table*, *Donut Charts*):
+* **Увольнения** в разрезе пола 
+* **Увольнения** по департаментам
+* **Колл-во** сотрудников по возрастным группам
+* **Рейтинг** удовлетворения сотурдников по их роли
+* **Увольнения** в разбивке по возрастнрым группам
+
