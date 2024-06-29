@@ -111,3 +111,5 @@ https://www.youtube.com/watch?v=RL-EZCi51gc
 **Инструмент: dbt**
 
 В качестве практики в одном из "Fancy ETL инструментов" прикладываю репозиторий моего dbt-проекта: [проект](https://github.com/FtrDtEngnr/dbt-scooters)
+
+![DBT](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/DBT.png)
