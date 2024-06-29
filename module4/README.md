@@ -40,17 +40,17 @@ https://www.youtube.com/watch?v=RL-EZCi51gc
 Довести до результата Pentaho jobs для Staging и Dimension Tables:
 
 
-**1. transformation_staging: [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/staging_transformation.png)**
+**1. transformation_staging: [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/staging%20orders.ktr)**
 
 ![здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/staging_transformation.png)
 
-**2. transformation_dim:** [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/dimension%20transformation%20.png)
+**2. transformation_dim:** [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/dim_tables.ktr)
 
 ![здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/dimension%20transformation%20.png)
 
 Создать новую трансформацию, результатом которой станет sales_fact таблица:
 
-**3. transformation_sales_fact:** [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/fact%20table%20transformation%20.png)
+**3. transformation_sales_fact:** [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/sales_fact_table.ktr)
    
 ![здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/fact%20table%20transformation%20.png)
 
@@ -85,10 +85,10 @@ https://www.youtube.com/watch?v=RL-EZCi51gc
   
 **4) Managing the ETL Environment**
 
-+27 - Workflow Monitor: мониторинг работы ETL решения (запись логов)
-+28 - Sort System: задача системы - упорядочивать строки
-+30 - Problem Escalation System: задача - сообщать о проблемах и например, автоматически создавать тикет в системе (Jira и т.п.)
-+33 - Compliance Reporter: сбор данных для возможного аудита, где можно отследить все действия ETL решения
++ 27 - Workflow Monitor: мониторинг работы ETL решения (запись логов)
++ 28 - Sort System: задача системы - упорядочивать строки
++ 30 - Problem Escalation System: задача - сообщать о проблемах и например, автоматически создавать тикет в системе (Jira и т.п.)
++ 33 - Compliance Reporter: сбор данных для возможного аудита, где можно отследить все действия ETL решения
 
 ## Tableau Prep Flow
 **Инструмент: Tableau Prep Flow**
@@ -97,15 +97,17 @@ https://www.youtube.com/watch?v=RL-EZCi51gc
 
 Для этого я создал:
 
-1. схему **tab** - отдельные таблицы с заказами по регионам
+1. схему **tab** и в ней отдельные таблицы с заказами по регионам
 
-2. DDL для создания схемы и таблиц: здесь
+2. DDL для создания схемы и таблиц: [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/schema%20tab.sql)
 
 3. Далее в Tableau Prep создал Flow, который собирает данные из разных файлов (заказы по регионам + возвраты + менеджеры) в одну таблицу. Таблицу в дальнейшем, можно использовать для построения дашборда в том же Tableau.
 
-**Tableau Prep Flow:** здесь
+**Tableau Prep Flow:** [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/tableau_prep_superstore.tfl)
+
+![tableau_prep](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/tableau_prep_flow.png)
 
 ## Data Build Tool (dbt) tool
 **Инструмент: dbt**
 
-В качестве практики в одном из "Fancy ETL инструментов" прикладываю обзор моего dbt-проекта: проект.
+В качестве практики в одном из "Fancy ETL инструментов" прикладываю репозиторий моего dbt-проекта: [проект](https://github.com/FtrDtEngnr/dbt-scooters)
