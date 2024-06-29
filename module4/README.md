@@ -28,66 +28,84 @@
 >    * [Ссылка на скачивание JRE](https://java.com/en/download/)
 >    * [Ссылка на скачивание JDK](https://www.oracle.com/java/technologies/downloads/) 
 > 3. Запустить spoon.sh для Linux/Mac и spoon.bat для Windows. Можно создать ярлык на рабочий стол, дать ему картинку из скачанной папки > >и назвать его, например, Pentaho Data Integration.
----
+
 Видео, по которому можно ориентироваться (автор - Павел Новичков, куратор 4-го модуля и ETL специалист):
 https://www.youtube.com/watch?v=RL-EZCi51gc
 
 ### ETL компоненты и начало работы с ETL на примере Pentaho Data Integration
+
 **Инструмент: Pentaho Data Integration Community Edition**
+
+
 Довести до результата Pentaho jobs для Staging и Dimension Tables:
-**1. transformation_staging: [здесь]()**
-2. transformation_dim: здесь
-оздать новую трансформацию, результатом которой станет sales_fact таблица:
 
-3. transformation_sales_fact: здесь
 
-Небольшой отчёт про подсистемы ETL Pentaho DI
-Инструмент: Pentaho Data Integration Community Edition
+**1. transformation_staging: [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/staging_transformation.png)**
+
+![здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/staging_transformation.png)
+
+**2. transformation_dim:** [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/dimension%20transformation%20.png)
+
+![здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/dimension%20transformation%20.png)
+
+Создать новую трансформацию, результатом которой станет sales_fact таблица:
+
+**3. transformation_sales_fact:** [здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/fact%20table%20transformation%20.png)
+   
+![здесь](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/fact%20table%20transformation%20.png)
+
+### Небольшой отчёт про подсистемы ETL Pentaho DI
+**Инструмент: Pentaho Data Integration Community Edition**
 
 Согласно Ральфу Кимбаллу, существует 34 ETL подсистемы, которые делятся на 4 основных категории:
 
-Data Extracting (получить данные из систем - E в ETL)
-Cleaning and Conforming Data (интеграция данных и подготовка к загрузке в DW - T в ETL)
-Delivering Data for Presentation (обработка данных в DW - L в ETL)
-Managing the ETL environment (управление и мониторинг компонентов ETL)
-Я обозначила разными цветами эти 4 категории и подписала некоторые использованные в моём решении ETL подсистемы:
++ Data Extracting (получить данные из систем - E в ETL)
++ Cleaning and Conforming Data (интеграция данных и подготовка к загрузке в DW - T в ETL)
++ Delivering Data for Presentation (обработка данных в DW - L в ETL)
++ Managing the ETL environment (управление и мониторинг компонентов ETL)
+Я обозначил разными цветами эти 4 категории и подписал некоторые использованные в моём решении ETL подсистемы:
+
+![ETL_SUBSYSTEMS](https://github.com/FtrDtEngnr/DataLearn/blob/main/module4/34_ETL_subsystems_01.png)
 
 Использованные подсистемы ETL в порядке по категориям:
 
-1) Data Extracting
+**1) Data Extracting**
 
-3 - Extracting System: задача системы - понять источник и суметь к нему подключиться
-2) Cleaning and Conforming Data
++ 3 - Extracting System: задача системы - понять источник и суметь к нему подключиться
+  
+**2) Cleaning and Conforming Data**
 
-6 - Audit Data: задача системы - мониторить качество данных и выявлять отклонения
-7 - Deduplication System: система выявляет дубликаты и удаляет их
-3) Data Delivery
++ 6 - Audit Data: задача системы - мониторить качество данных и выявлять отклонения
++ 7 - Deduplication System: система выявляет дубликаты и удаляет их
+  
+**3) Data Delivery**
 
-10 - Surrogate Key Creation System: генерация суррогатных ключей для натуральных ключей (например, через создание последовательности чисел)
-21 - Data Integration Manager: задача системы - забирать данные и загружать их в другие системы
-4) Managing the ETL Environment
++ 10 - Surrogate Key Creation System: генерация суррогатных ключей для натуральных ключей (например, через создание последовательности чисел)
++ 21 - Data Integration Manager: задача системы - забирать данные и загружать их в другие системы
+  
+**4) Managing the ETL Environment**
 
-27 - Workflow Monitor: мониторинг работы ETL решения (запись логов)
-28 - Sort System: задача системы - упорядочивать строки
-30 - Problem Escalation System: задача - сообщать о проблемах и например, автоматически создавать тикет в системе (Jira и т.п.)
-33 - Compliance Reporter: сбор данных для возможного аудита, где можно отследить все действия ETL решения
-Tableau Prep Flow
-Инструмент: Tableau Prep Flow
++27 - Workflow Monitor: мониторинг работы ETL решения (запись логов)
++28 - Sort System: задача системы - упорядочивать строки
++30 - Problem Escalation System: задача - сообщать о проблемах и например, автоматически создавать тикет в системе (Jira и т.п.)
++33 - Compliance Reporter: сбор данных для возможного аудита, где можно отследить все действия ETL решения
 
-Для того чтобы имитировать рабочую ситуацию - сбор и объединение данных из разных источников с помощью Tableau Prep - я создала отдельные файлы в базе данных Postgres.
+## Tableau Prep Flow
+**Инструмент: Tableau Prep Flow**
 
-Для этого я создала:
+Для того чтобы имитировать рабочую ситуацию - сбор и объединение данных из разных источников с помощью Tableau Prep - я создал отдельные файлы в базе данных Postgres.
 
-схему tab
-в ней отдельные таблицы с заказами по регионам
-DDL для создания схемы и таблиц: здесь
+Для этого я создал:
 
-Далее в Tableau Prep (в этом сервисе есть бесплатный пробный период на 14 дней + для РФ обязательно VPN) я создала Flow, который собирает данные из разных файлов (заказы по регионам + возвраты + менеджеры) в одну таблицу - которую в дальнейшем, например, можно использовать для построения дашборда в том же Tableau.
+1. схему **tab** - отдельные таблицы с заказами по регионам
 
-Tableau Prep Flow: здесь
-.S. Tableau за его дизайн навсегда в моём сердце...
+2. DDL для создания схемы и таблиц: здесь
 
-Data Build Tool (dbt) tool
-Инструмент: dbt
+3. Далее в Tableau Prep создал Flow, который собирает данные из разных файлов (заказы по регионам + возвраты + менеджеры) в одну таблицу. Таблицу в дальнейшем, можно использовать для построения дашборда в том же Tableau.
+
+**Tableau Prep Flow:** здесь
+
+## Data Build Tool (dbt) tool
+**Инструмент: dbt**
 
 В качестве практики в одном из "Fancy ETL инструментов" прикладываю обзор моего dbt-проекта: проект.
